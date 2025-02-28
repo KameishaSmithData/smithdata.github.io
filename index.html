@@ -9,43 +9,40 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
             color: #333;
         }
         .hero {
-            background: url('https://source.unsplash.com/1600x900/?technology,data') center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology,data') center/cover;
             color: white;
             padding: 100px 20px;
             text-align: center;
-            position: relative;
         }
         .hero h1 {
             font-size: 3rem;
             font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .hero p {
             font-size: 1.2rem;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         .btn-custom {
-            background-color: #007bff;
+            background-color: #ff6600;
             color: white;
             padding: 10px 20px;
             font-size: 1.2rem;
             border-radius: 5px;
         }
-        .services, .portfolio {
+        .services, .portfolio, .resources, .blog {
             padding: 60px 20px;
         }
-        .service-card, .portfolio-card {
+        .service-card, .portfolio-card, .resource-card, .blog-card {
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             background: white;
             transition: 0.3s;
         }
-        .service-card:hover, .portfolio-card:hover {
+        .service-card:hover, .portfolio-card:hover, .resource-card:hover, .blog-card:hover {
             transform: scale(1.05);
         }
         .footer {
@@ -100,16 +97,28 @@
                     <p>Developed an interactive Power BI dashboard for a retail company, improving sales tracking by 30%.</p>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div class="container blog text-center">
+        <h2 class="mb-4">Latest Blog Posts</h2>
+        <div class="row">
             <div class="col-md-4">
-                <div class="portfolio-card">
-                    <h4>Customer Segmentation Model</h4>
-                    <p>Implemented a predictive analytics model to classify customer behavior, increasing retention rates.</p>
+                <div class="blog-card">
+                    <h4>5 Ways to Improve Your Budgeting with Data</h4>
+                    <p>Learn how data analytics can enhance financial planning.</p>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div class="container resources text-center">
+        <h2 class="mb-4">Resources</h2>
+        <div class="row">
             <div class="col-md-4">
-                <div class="portfolio-card">
-                    <h4>Automated Data Processing</h4>
-                    <p>Designed an automation pipeline to streamline data processing, reducing manual effort by 50%.</p>
+                <div class="resource-card">
+                    <h4>Interactive Budget Calculator</h4>
+                    <p>Use our free budgeting tool to plan your finances effectively.</p>
                 </div>
             </div>
         </div>

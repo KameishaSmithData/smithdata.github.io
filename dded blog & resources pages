@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smith Data Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .resource-container {
+            padding: 40px;
+        }
+        .resource-card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .resource-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Smith Data Resources</h1>
+        <p>Tools and insights to help you make data-driven decisions.</p>
+    </div>
+    
+    <div class="container resource-container">
+        <h2 class="mb-4">Featured Resources</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="resource-card" onclick="location.href='budget_calculator.html'">
+                    <h4>Interactive Budget Calculator</h4>
+                    <p>Plan and optimize your finances with our budgeting tool.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resource-card" onclick="location.href='data_analysis_guide.pdf'">
+                    <h4>Beginner’s Guide to Data Analysis</h4>
+                    <p>Learn the fundamentals of analyzing and visualizing data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

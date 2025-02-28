@@ -13,7 +13,7 @@
             color: #333;
         }
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology,data') center/cover;
+            background: #2c3e50;
             color: white;
             padding: 100px 20px;
             text-align: center;
@@ -32,17 +32,18 @@
             font-size: 1.2rem;
             border-radius: 5px;
         }
-        .services, .portfolio, .resources, .blog {
+        .section {
             padding: 60px 20px;
         }
-        .service-card, .portfolio-card, .resource-card, .blog-card {
+        .card {
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             background: white;
             transition: 0.3s;
+            cursor: pointer;
         }
-        .service-card:hover, .portfolio-card:hover, .resource-card:hover, .blog-card:hover {
+        .card:hover {
             transform: scale(1.05);
         }
         .footer {
@@ -58,41 +59,27 @@
     <div class="hero">
         <h1>Smith Data Analytics</h1>
         <p>Turning raw data into smart business decisions.</p>
-        <a href="mailto:smithdata.org@gmail.com" class="btn btn-custom">Get in Touch</a>
+        <a href="#contact" class="btn btn-custom">Get in Touch</a>
     </div>
     
-    <div class="container services text-center">
+    <div id="services" class="container section text-center">
         <h2 class="mb-4">Our Services</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="service-card">
+                <div class="card">
                     <i class="fas fa-chart-line fa-3x text-primary"></i>
                     <h4>Data Analysis & Visualization</h4>
                     <p>Transform raw data into interactive dashboards & insights.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <i class="fas fa-lightbulb fa-3x text-primary"></i>
-                    <h4>Business Intelligence</h4>
-                    <p>Use data-driven insights to optimize decision-making.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card">
-                    <i class="fas fa-cogs fa-3x text-primary"></i>
-                    <h4>Automation & AI</h4>
-                    <p>Reduce manual processes with automated workflows.</p>
-                </div>
-            </div>
         </div>
     </div>
     
-    <div class="container portfolio text-center">
+    <div id="portfolio" class="container section text-center">
         <h2 class="mb-4">Recent Projects</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="portfolio-card">
+                <div class="card">
                     <h4>E-commerce Sales Dashboard</h4>
                     <p>Developed an interactive Power BI dashboard for a retail company, improving sales tracking by 30%.</p>
                 </div>
@@ -100,11 +87,11 @@
         </div>
     </div>
     
-    <div class="container blog text-center">
+    <div id="blog" class="container section text-center">
         <h2 class="mb-4">Latest Blog Posts</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="blog-card">
+                <div class="card">
                     <h4>5 Ways to Improve Your Budgeting with Data</h4>
                     <p>Learn how data analytics can enhance financial planning.</p>
                 </div>
@@ -112,16 +99,38 @@
         </div>
     </div>
     
-    <div class="container resources text-center">
+    <div id="resources" class="container section text-center">
         <h2 class="mb-4">Resources</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="resource-card">
+                <div class="card">
                     <h4>Interactive Budget Calculator</h4>
                     <p>Use our free budgeting tool to plan your finances effectively.</p>
                 </div>
             </div>
         </div>
+    </div>
+    
+    <div id="pricing" class="container section text-center">
+        <h2 class="mb-4">Pricing Plans</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <h4>Basic Plan</h4>
+                    <p>$99/month - Includes data visualization & reports.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact" class="container section text-center">
+        <h2 class="mb-4">Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" class="form-control mb-3">
+            <input type="email" placeholder="Your Email" class="form-control mb-3">
+            <textarea placeholder="Your Message" class="form-control mb-3"></textarea>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
     
     <div class="footer">

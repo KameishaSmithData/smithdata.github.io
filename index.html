@@ -3,138 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smith Data - Data Analytics Solutions</title>
+    <title>Smith Data Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #ffffff;
             color: #333;
         }
-        .hero {
+        .header {
             background: #2c3e50;
             color: white;
-            padding: 100px 20px;
+            padding: 50px;
             text-align: center;
         }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
+        .blog-container {
+            padding: 40px;
         }
-        .hero p {
-            font-size: 1.2rem;
-        }
-        .btn-custom {
-            background-color: #ff6600;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            border-radius: 5px;
-        }
-        .section {
-            padding: 60px 20px;
-        }
-        .card {
-            padding: 30px;
+        .blog-card {
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             background: white;
             transition: 0.3s;
             cursor: pointer;
         }
-        .card:hover {
+        .blog-card:hover {
             transform: scale(1.05);
-        }
-        .footer {
-            background: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
     
-    <div class="hero">
-        <h1>Smith Data Analytics</h1>
-        <p>Turning raw data into smart business decisions.</p>
-        <a href="#contact" class="btn btn-custom">Get in Touch</a>
+    <div class="header">
+        <h1>Smith Data Blog</h1>
+        <p>Insights, analytics, and strategies to help you harness the power of data.</p>
     </div>
     
-    <div id="services" class="container section text-center">
-        <h2 class="mb-4">Our Services</h2>
+    <div class="container blog-container">
+        <h2 class="mb-4">Latest Articles</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
-                    <i class="fas fa-chart-line fa-3x text-primary"></i>
-                    <h4>Data Analysis & Visualization</h4>
-                    <p>Transform raw data into interactive dashboards & insights.</p>
+                <div class="blog-card" onclick="location.href='blog1.html'">
+                    <h4>5 Ways to Improve Your Budgeting with Data</h4>
+                    <p>Learn how analytics can help optimize personal and business finances.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <i class="fas fa-lightbulb fa-3x text-primary"></i>
-                    <h4>Business Intelligence</h4>
-                    <p>Optimize decision-making with data-driven insights.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <i class="fas fa-database fa-3x text-primary"></i>
-                    <h4>Predictive Analytics</h4>
-                    <p>Utilize data modeling to forecast trends and behaviors.</p>
+                <div class="blog-card" onclick="location.href='blog2.html'">
+                    <h4>Why Data-Driven Decisions Matter</h4>
+                    <p>Explore the importance of data in strategic business growth.</p>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div id="pricing" class="container section text-center">
-        <h2 class="mb-4">Pricing Plans</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-                    <h4>Short-Term</h4>
-                    <p>$99 per service/request</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <h4>Mid-Term (Recommended)</h4>
-                    <p>$350 per month (up to 4 services)</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <h4>Long-Term</h4>
-                    <p>$725 per month (up to 8 services)</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card">
-                    <h4>Custom Needs</h4>
-                    <p>Contact us for pricing</p>
-                </div>
-            </div>
-        </div>
-        <p><strong>Turnaround Time:</strong> Projects take a minimum of 4 business days after review, acceptance, and receipt of 50% payment. Rush orders are available for an additional fee (max 50% of original price). Free revisions up to 2; additional revisions require a fee. No refunds, all sales are final.</p>
-    </div>
-    
-    <div id="contact" class="container section text-center">
-        <h2 class="mb-4">Get in Touch</h2>
-        <form>
-            <input type="text" placeholder="Your Name" class="form-control mb-3">
-            <input type="email" placeholder="Your Email" class="form-control mb-3">
-            <textarea placeholder="Your Message" class="form-control mb-3"></textarea>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-    
-    <div class="footer">
-        <p>📩 Contact: <a href="mailto:smithdata.org@gmail.com" class="text-white">smithdata.org@gmail.com</a></p>
-        <p>&copy; 2025 Smith Data. All Rights Reserved.</p>
     </div>
     
 </body>
 </html>
-

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smith Data Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .blog-container {
+            padding: 40px;
+        }
+        .blog-card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .blog-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Smith Data Blog</h1>
+        <p>Insights, analytics, and strategies to help you harness the power of data.</p>
+    </div>
+
+    <div class="container blog-container">
+        <h2 class="mb-4">Latest Articles</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="blog-card" onclick="location.href='blog1.html'">
+                    <h4>5 Ways to Improve Your Budgeting with Data</h4>
+                    <p>Learn how analytics can help optimize personal and business finances.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-card" onclick="location.href='blog2.html'">
+                    <h4>Why Data-Driven Decisions Matter</h4>
+                    <p>Explore the importance of data in strategic business growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

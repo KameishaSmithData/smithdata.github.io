@@ -17,13 +17,16 @@
             color: white;
             padding: 100px 20px;
             text-align: center;
+            position: relative;
         }
         .hero h1 {
             font-size: 3rem;
             font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .hero p {
             font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         .btn-custom {
             background-color: #007bff;
@@ -32,17 +35,17 @@
             font-size: 1.2rem;
             border-radius: 5px;
         }
-        .services {
+        .services, .portfolio {
             padding: 60px 20px;
         }
-        .service-card {
+        .service-card, .portfolio-card {
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             background: white;
             transition: 0.3s;
         }
-        .service-card:hover {
+        .service-card:hover, .portfolio-card:hover {
             transform: scale(1.05);
         }
         .footer {
@@ -57,7 +60,7 @@
     
     <div class="hero">
         <h1>Smith Data Analytics</h1>
-        <p>Helping businesses turn data into smart decisions.</p>
+        <p>Turning raw data into smart business decisions.</p>
         <a href="mailto:smithdata.org@gmail.com" class="btn btn-custom">Get in Touch</a>
     </div>
     
@@ -83,6 +86,30 @@
                     <i class="fas fa-cogs fa-3x text-primary"></i>
                     <h4>Automation & AI</h4>
                     <p>Reduce manual processes with automated workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container portfolio text-center">
+        <h2 class="mb-4">Recent Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <h4>E-commerce Sales Dashboard</h4>
+                    <p>Developed an interactive Power BI dashboard for a retail company, improving sales tracking by 30%.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <h4>Customer Segmentation Model</h4>
+                    <p>Implemented a predictive analytics model to classify customer behavior, increasing retention rates.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="portfolio-card">
+                    <h4>Automated Data Processing</h4>
+                    <p>Designed an automation pipeline to streamline data processing, reducing manual effort by 50%.</p>
                 </div>
             </div>
         </div>

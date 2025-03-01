@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginner’s Guide to Data Analysis - Smith Data</title>
+    <title>Smith Data Resources</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #ffffff;
-            color: #222222;
+            color: #333;
         }
         .header {
             background: #2c3e50;
@@ -17,11 +17,19 @@
             padding: 50px;
             text-align: center;
         }
-        .header h1 {
-            font-weight: bold;
-        }
-        .content {
+        .resource-container {
             padding: 40px;
+        }
+        .resource-card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .resource-card:hover {
+            transform: scale(1.05);
         }
         .footer {
             background: #2c3e50;
@@ -53,25 +61,26 @@
     </nav>
     
     <div class="header">
-        <h1>Beginner’s Guide to Data Analysis</h1>
-        <p>Learn the fundamentals of analyzing and visualizing data.</p>
+        <h1>Smith Data Resources</h1>
+        <p>Tools and insights to help you make data-driven decisions.</p>
     </div>
     
-    <div class="container content">
-        <h2><strong>1. Understanding Data Types</strong></h2>
-        <p>Learn the difference between structured and unstructured data and how they impact analysis.</p>
-        
-        <h2><strong>2. Collecting and Cleaning Data</strong></h2>
-        <p>Before analyzing data, it's important to remove inconsistencies, duplicates, and missing values.</p>
-        
-        <h2><strong>3. Choosing the Right Tools</strong></h2>
-        <p>Explore different data analysis tools like Excel, Python, SQL, and Power BI.</p>
-        
-        <h2><strong>4. Visualizing Your Data</strong></h2>
-        <p>Data visualization helps communicate insights effectively. Learn about charts, dashboards, and storytelling techniques.</p>
-        
-        <h2><strong>5. Making Data-Driven Decisions</strong></h2>
-        <p>Interpreting data correctly allows businesses to optimize processes and drive growth.</p>
+    <div class="container resource-container">
+        <h2 class="mb-4">Featured Resources</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="resource-card" onclick="location.href='budget_calculator.html'">
+                    <h4>Interactive Budget Calculator</h4>
+                    <p>Plan and optimize your finances with our budgeting tool.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resource-card" onclick="location.href='data_analysis_guide.html'">
+                    <h4>Beginner’s Guide to Data Analysis</h4>
+                    <p>Learn the fundamentals of analyzing and visualizing data.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="footer">

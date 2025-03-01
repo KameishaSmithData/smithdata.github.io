@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Budget Calculator - Smith Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script>
+        function calculateBudget() {
+            let income = parseFloat(document.getElementById("income").value) || 0;
+            let expenses = parseFloat(document.getElementById("expenses").value) || 0;
+            let remaining = income - expenses;
+            document.getElementById("result").innerHTML = "Remaining Balance: $" + remaining.toFixed(2);
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #222222;
+        }
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .header h1 {
+            font-weight: bold;
+        }
+        .container {
+            padding: 40px;
+        }
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .nav {
+            background: #2c3e50;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="header">
+        <h1>Interactive Budget Calculator</h1>
+        <p>Plan and optimize your finances with our budgeting tool.</p>
+    </div>
+    
+    <div class="container">
+        <label for="income"><strong>Monthly Income ($):</strong></label>
+        <input type="number" id="income" class="form-control mb-2">
+        
+        <label for="expenses"><strong>Total Expenses ($):</strong></label>
+        <input type="number" id="expenses" class="form-control mb-2">
+        
+        <button class="btn btn-primary" onclick="calculateBudget()">Calculate</button>
+        <h3 id="result" class="mt-3"></h3>
+    </div>
+
+    <div class="footer">
+        <p>📩 Contact: <a href="mailto:smithdata.org@gmail.com" class="text-white">smithdata.org@gmail.com</a></p>
+        <p>&copy; 2025 Smith Data. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>

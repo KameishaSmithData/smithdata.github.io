@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <nav style="background-color: #2c3e50; padding: 15px; text-align: center;">
-    <a href="index.html" style="color: white; margin-right: 20px;">Home</a>
-    <a href="blog.html" style="color: white; margin-right: 20px;">Blog</a>
-    <a href="resources.html" style="color: white;">Resources</a>
-        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smith Data Resources</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -32,46 +28,78 @@
             background: white;
             transition: 0.3s;
             cursor: pointer;
+            text-align: center;
         }
         .resource-card:hover {
             transform: scale(1.05);
         }
         .footer {
             background: #2c3e50;
-            color: white;
             padding: 20px;
             text-align: center;
             margin-top: 40px;
+            color: white;
+        }
+        .nav {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+        }
+        .nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Header Section -->
     <div class="header">
         <h1>Smith Data Resources</h1>
         <p>Tools and insights to help you make data-driven decisions.</p>
     </div>
-    
+
+    <!-- Resources Section -->
     <div class="container resource-container">
-        <h2 class="mb-4">Featured Resources</h2>
+        <h2 class="mb-4 text-center">Featured Resources</h2>
         <div class="row">
+            
+            <!-- Budget Calculator -->
             <div class="col-md-4">
-                <div class="resource-card" onclick="location.href='budget_calculator.html'">
-                    <h4>Interactive Budget Calculator</h4>
-                    <p>Plan and optimize your finances with our budgeting tool.</p>
+                <div class="resource-card">
+                    <a href="https://thesmithbudgetapp.streamlit.app/" target="_blank" style="text-decoration: none; color: inherit;">
+                        <h4>Interactive Budget Calculator</h4>
+                        <p>Plan and optimize your finances with our budgeting tool.</p>
+                    </a>
                 </div>
             </div>
+
+            <!-- Beginner's Guide to Data Analysis -->
             <div class="col-md-4">
-                <div class="resource-card" onclick="location.href='data_analysis_guide.html'">
-                    <h4>Beginner’s Guide to Data Analysis</h4>
-                    <p>Learn the fundamentals of analyzing and visualizing data.</p>
+                <div class="resource-card">
+                    <a href="data_analysis_guide.html" style="text-decoration: none; color: inherit;">
+                        <h4>Beginner’s Guide to Data Analysis</h4>
+                        <p>Learn the fundamentals of analyzing and visualizing data.</p>
+                    </a>
                 </div>
             </div>
+
         </div>
     </div>
 
+    <!-- Footer -->
     <div class="footer">
-        <p>📩 Contact: <a href="mailto:smithdata.org@gmail.com" class="text-white">smithdata.org@gmail.com</a></p>
+        <p>📧 Contact: <a href="mailto:smithdata.org@gmail.com" class="text-white">smithdata.org@gmail.com</a></p>
         <p>&copy; 2025 Smith Data. All Rights Reserved.</p>
     </div>
 

@@ -74,6 +74,7 @@
         <div class="payment-option">
             <p><strong>Custom Payment</strong> - Enter Amount</p>
             <input id="customAmount" type="number" class="form-control" placeholder="Enter Amount (USD)">
+            <br>
             <div id="paypal-button-container-custom"></div>
         </div>
     </div>
@@ -128,12 +129,13 @@
         }).render("#paypal-button-container-long");
 
         // PayPal Button for Custom Amount
-        function payCustomAmount() {
+        function renderCustomButton() {
             let amount = document.getElementById("customAmount").value;
             if (amount <= 0) {
                 alert("Please enter a valid amount.");
                 return;
             }
+            document.getElementById("paypal-button-container-custom").innerHTML = "";
             paypal.Buttons({
                 createOrder: function(data, actions) {
                     return actions.order.create({
@@ -147,6 +149,9 @@
                 }
             }).render("#paypal-button-container-custom");
         }
+
+        // Ensure the button appears when amount is entered
+        document.getElementById("customAmount").addEventListener("input", renderCustomButton);
     </script>
 
 </body>

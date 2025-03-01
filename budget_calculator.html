@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Budget Calculator - Smith Data</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <script>
-        function calculateBudget() {
-            let income = parseFloat(document.getElementById("income").value) || 0;
-            let expenses = parseFloat(document.getElementById("expenses").value) || 0;
-            let remaining = income - expenses;
-            document.getElementById("result").innerHTML = "Remaining Balance: $" + remaining.toFixed(2);
-        }
-    </script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -30,6 +22,7 @@
         }
         .container {
             padding: 40px;
+            text-align: center;
         }
         .footer {
             background: #2c3e50;
@@ -49,6 +42,13 @@
             text-decoration: none;
             font-weight: bold;
         }
+        .btn-custom {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -62,18 +62,12 @@
     
     <div class="header">
         <h1>Interactive Budget Calculator</h1>
-        <p>Plan and optimize your finances with our budgeting tool.</p>
+        <p>Plan and optimize your finances with our powerful budgeting tool.</p>
     </div>
     
     <div class="container">
-        <label for="income"><strong>Monthly Income ($):</strong></label>
-        <input type="number" id="income" class="form-control mb-2">
-        
-        <label for="expenses"><strong>Total Expenses ($):</strong></label>
-        <input type="number" id="expenses" class="form-control mb-2">
-        
-        <button class="btn btn-primary" onclick="calculateBudget()">Calculate</button>
-        <h3 id="result" class="mt-3"></h3>
+        <p>Access our full-featured budget calculator by clicking the button below:</p>
+        <a href="https://thesmithbudgetapp.streamlit.app/" target="_blank" class="btn btn-custom">Use the Budget Calculator</a>
     </div>
 
     <div class="footer">
